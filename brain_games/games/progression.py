@@ -11,8 +11,10 @@ def get_brain_game_init_question():
 
 
 def get_question():
-    start = random.randint(PROGRESSION_START_RANGE[0], PROGRESSION_START_RANGE[1])
-    increment = random.randint(PROGRESSION_INCREMENT_RANGE[0], PROGRESSION_INCREMENT_RANGE[1])
+    start = random.randint(PROGRESSION_START_RANGE[0],
+                           PROGRESSION_START_RANGE[1])
+    increment = random.randint(PROGRESSION_INCREMENT_RANGE[0],
+                               PROGRESSION_INCREMENT_RANGE[1])
     skip_i = random.randint(1, PROGRESSION_LENGTH)
 
     question = ""
