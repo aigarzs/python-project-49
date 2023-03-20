@@ -13,7 +13,7 @@ def run(game_module):
     for i in range(ITERATIONS):
         question, valid_answer = game_module.get_question()
 
-        answer = prompt.string("Question " + question + "\nYour answer: ")
+        answer = prompt.string("Question: " + question + "\nYour answer: ")
         if answer == valid_answer:
             print("Correct!")
         else:
