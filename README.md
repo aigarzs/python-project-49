@@ -6,4 +6,4 @@
 
 ### Brain games - demo:
 [Even number](https://asciinema.org/a/0cRecKYkUA8xNZjij7Pa5ATfg)
-
+[Calculator](https://asciinema.org/a/hoGBI1JkaABr6VZN5B39Ivuip)
