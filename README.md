@@ -13,3 +13,5 @@
 
 [Progression](https://asciinema.org/a/mRYsJXpGbYBJmpuSUItYR1MLX)
 
+[Prime Number](https://asciinema.org/a/pEyJ7NAcIdE6weD7EbK6ZHvJz)
+
