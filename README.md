@@ -8,10 +8,10 @@
 
 This project was built using these tools:
 
-| Tool                                                                        | Description                                             |
-|-----------------------------------------------------------------------------|---------------------------------------------------------|
-| [poetry](https://poetry.eustace.io/)                                        | "Python dependency management and packaging made easy"  |
-| [flake8](https://flake8.pycqa.org/en/latest/)                               | "Your Tool For Style Guide Enforcement"                 |
+| Tool                                           | Description                                             |
+|------------------------------------------------|---------------------------------------------------------|
+| [poetry](https://poetry.eustace.io/)           | "Python dependency management and packaging made easy"  |
+| [flake8](https://flake8.pycqa.org/en/latest/)  | "Your Tool For Style Guide Enforcement"                 |
 
 ---
 ## Install
