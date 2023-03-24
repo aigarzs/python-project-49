@@ -1,17 +1,18 @@
 import prompt
-from brain_games import cli
 
 
-ITERATIONS = 3
+ROUNDS_COUNT = 3
 
 
-def run(game_module):
-    name = cli.welcome_user()
+def run(game):
+    print("Welcome to the Brain Games!")
+    name = prompt.string("May I have your name? ")
+    print("Hello, " + name + "!")
 
-    print(game_module.get_brain_game_init_question())
+    print(game.brain_game_init_question)
 
-    for i in range(ITERATIONS):
-        question, valid_answer = game_module.get_question()
+    for i in range(ROUNDS_COUNT):
+        question, valid_answer = game.get_question()
 
         answer = prompt.string("Question: " + question + "\nYour answer: ")
         if answer == valid_answer:

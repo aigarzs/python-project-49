@@ -1,29 +1,30 @@
 import random
 
 
-PROGRESSION_LENGTH = 10
-PROGRESSION_START_RANGE = (1, 30)
-PROGRESSION_INCREMENT_RANGE = (1, 10)
-
-
-def get_brain_game_init_question():
-    return 'What number is missing in the progression?'
+brain_game_init_question = 'What number is missing in the progression?'
 
 
 def get_question():
-    start = random.randint(PROGRESSION_START_RANGE[0],
-                           PROGRESSION_START_RANGE[1])
-    increment = random.randint(PROGRESSION_INCREMENT_RANGE[0],
-                               PROGRESSION_INCREMENT_RANGE[1])
-    skip_i = random.randint(1, PROGRESSION_LENGTH)
+
+    progression = get_progression()
+    skip_i = random.randint(0, len(progression) - 1)
+
+    valid_answer = str(progression[skip_i])
+    progression[skip_i] = ".."
 
     question = ""
-    for i in range(1, PROGRESSION_LENGTH + 1):
-        num = start + increment * i
-        if i == skip_i:
-            valid_answer = str(num)
-            question = question + ".. "
-        else:
-            question = question + str(num) + " "
+    for i in range(len(progression)):
+        question = question + str(progression[i]) + " "
 
     return question, valid_answer
+
+
+def get_progression():
+    start = random.randint(1, 30)
+    increment = random.randint(1, 10)
+    progression = []
+
+    for i in range(10):
+        progression.append(start + i * increment)
+
+    return progression
