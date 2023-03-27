@@ -1,10 +1,10 @@
 import random
 
 
-brain_game_init_question = 'What is the result of the expression?'
+GAME_RULES = 'What is the result of the expression?'
 
 
-def get_question():
+def get_question_and_answer():
     operators = ("+", "-", "*")
     op = random.choice(operators)
     first_num = random.randint(11, 20)

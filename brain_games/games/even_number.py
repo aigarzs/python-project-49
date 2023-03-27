@@ -1,11 +1,11 @@
 import random
 
 
-brain_game_init_question = 'Answer "yes" if the number is even, \
+GAME_RULES = 'Answer "yes" if the number is even, \
 otherwise answer "no".'
 
 
-def get_question():
+def get_question_and_answer():
     number = random.randint(1, 20)
 
     if is_even_number(number):

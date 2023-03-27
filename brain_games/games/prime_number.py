@@ -1,11 +1,11 @@
 import random
 
 
-brain_game_init_question = 'Answer "yes" if given number is prime. \
+GAME_RULES = 'Answer "yes" if given number is prime. \
 Otherwise answer "no".'
 
 
-def get_question():
+def get_question_and_answer():
     number = random.randint(1, 100)
 
     if is_prime_number(number):

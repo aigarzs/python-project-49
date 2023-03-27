@@ -9,10 +9,10 @@ def run(game):
     name = prompt.string("May I have your name? ")
     print("Hello, " + name + "!")
 
-    print(game.brain_game_init_question)
+    print(game.GAME_RULES)
 
     for i in range(ROUNDS_COUNT):
-        question, valid_answer = game.get_question()
+        question, valid_answer = game.get_question_and_answer()
 
         answer = prompt.string("Question: " + question + "\nYour answer: ")
         if answer == valid_answer:
